@@ -342,7 +342,7 @@ export default function EucharistiePage() {
               </button>
               
               <p className="text-red-600 text-sm mt-6 italic max-w-2xl mx-auto">
-                "Vejdete a najdete odpočinutí pro své duše. Mé jho je sladké a mé břemeno lehké." - Mt 11,29
+                ;Vejdete a najdete odpočinutí pro své duše. Mé jho je sladké a mé břemeno lehké.; - Mt 11,29
               </p>
             </div>
           </div>

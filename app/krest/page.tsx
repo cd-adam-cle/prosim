@@ -461,7 +461,7 @@ export default function KrestPage() {
               </div>
 
               <p className="text-blue-600 text-xs sm:text-sm italic">
-                "Ptej se, hledej, a bude ti dáno. Každá cesta víry začíná prvním krokem." 
+                  ;Ptej se, hledej, a bude ti dáno. Každá cesta víry začíná prvním krokem.; 
               </p>
             </div>
           </div>

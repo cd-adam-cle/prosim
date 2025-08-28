@@ -469,7 +469,7 @@ export default function BirmovaniPage() {
 
                   <div className="text-center">
                     <p className="text-amber-700 text-base sm:text-lg mb-6 sm:mb-8 italic">
-                      "Tyto dary nejsou jen teoretické - jsou to skutečné síly, které ti pomohou žít naplněný křesťanský život."
+                      ;Tyto dary nejsou jen teoretické - jsou to skutečné síly, které ti pomohou žít naplněný křesťanský život.;
                     </p>
                     
                     <button className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-amber-700 to-amber-900 text-white font-bold text-base sm:text-lg rounded-xl shadow-xl shadow-amber-500/20 hover:shadow-amber-500/30 transition-all duration-300 hover:scale-105">
@@ -551,7 +551,7 @@ export default function BirmovaniPage() {
               </div>
 
               <p className="text-amber-600 text-xs sm:text-sm italic">
-                "Duch svatý vás povede do vší pravdy a dá vám sílu být svědky." 
+                ;Duch svatý vás povede do vší pravdy a dá vám sílu být svědky.; 
               </p>
             </div>
           </div>
