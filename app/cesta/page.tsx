@@ -1,5 +1,6 @@
 "use client" 
 import React, { useState, useEffect } from 'react';
+import Link from "next/link";
 
 export default function ParishFinderSection() {
   const [selectedRegion, setSelectedRegion] = useState("");
@@ -75,19 +76,19 @@ export default function ParishFinderSection() {
             
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-1">
-              <a
+              <Link 
                 href="/"
                 className="group relative px-4 xl:px-6 py-3 text-amber-800 font-bold text-base xl:text-lg transition-all duration-300 bg-amber-100 rounded-2xl"
               >
                 <span className="relative z-10">Úvod</span>
-              </a>
-              <a
+              </Link>
+              <Link 
                 href="/priprava"
                 className="group relative px-4 xl:px-6 py-3 text-amber-700 hover:text-amber-900 font-medium text-base xl:text-lg transition-all duration-300"
               >
                 <span className="relative z-10">Příprava</span>
                 <div className="absolute inset-0 bg-amber-100 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-300 scale-95 group-hover:scale-100"></div>
-              </a>
+              </Link>
               
               {/* Svátosti Dropdown */}
               <div className="relative group">
@@ -105,35 +106,35 @@ export default function ParishFinderSection() {
                 </button>
                 <div className="absolute top-full left-0 mt-4 w-64 xl:w-72 bg-amber-50/98 backdrop-blur-3xl rounded-3xl shadow-2xl shadow-amber-200/30 border border-amber-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
                   <div className="p-4 space-y-2">
-                    <a
+                    <Link 
                       href="/krest"
                       className="block px-4 xl:px-6 py-3 xl:py-4 text-amber-700 hover:text-amber-900 hover:bg-amber-100/80 rounded-2xl transition-all duration-300 font-medium text-base xl:text-lg"
                     >
                       Křest
-                    </a>
-                    <a
+                    </Link>
+                    <Link 
                       href="/birmovani"
                       className="block px-4 xl:px-6 py-3 xl:py-4 text-amber-700 hover:text-amber-900 hover:bg-amber-100/80 rounded-2xl transition-all duration-300 font-medium text-base xl:text-lg"
                     >
                       Biřmování
-                    </a>
-                    <a
+                    </Link>
+                    <Link 
                       href="/eucharistie"
                       className="block px-4 xl:px-6 py-3 xl:py-4 text-amber-700 hover:text-amber-900 hover:bg-amber-100/80 rounded-2xl transition-all duration-300 font-medium text-base xl:text-lg"
                     >
                       Eucharistie
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               
-              <a
+              <Link 
                 href="/cesta"
                 className="group relative px-4 xl:px-6 py-3 text-amber-700 hover:text-amber-900 font-medium text-base xl:text-lg transition-all duration-300"
               >
                 <span className="relative z-10">Cesta</span>
                 <div className="absolute inset-0 bg-amber-100 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-300 scale-95 group-hover:scale-100"></div>
-              </a>
+              </Link>
             </nav>
           </div>
           </div>

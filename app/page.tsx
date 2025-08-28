@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect } from "react"
+import Link from "next/link";
 
 export default function HomePage() {
   const [selectedSacrament, setSelectedSacrament] = useState(null)
@@ -98,19 +99,16 @@ export default function HomePage() {
             
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-1">
-              <a
-                href="/"
-                className="group relative px-4 xl:px-6 py-3 text-amber-800 font-bold text-base xl:text-lg transition-all duration-300 bg-amber-100 rounded-2xl"
-              >
-                <span className="relative z-10">Úvod</span>
-              </a>
-              <a
+              <Link href="/"
+                 className="group relative px-4 xl:px-6 py-3 text-amber-800 font-bold text-base xl:text-lg transition-all duration-300 bg-amber-100 rounded-2xl"><span className="relative z-10">Úvod</span>
+              </Link>
+              <Link 
                 href="/priprava"
                 className="group relative px-4 xl:px-6 py-3 text-amber-700 hover:text-amber-900 font-medium text-base xl:text-lg transition-all duration-300"
               >
                 <span className="relative z-10">Příprava</span>
                 <div className="absolute inset-0 bg-amber-100 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-300 scale-95 group-hover:scale-100"></div>
-              </a>
+              </Link>
               
               {/* Svátosti Dropdown */}
               <div className="relative group">
@@ -128,35 +126,35 @@ export default function HomePage() {
                 </button>
                 <div className="absolute top-full left-0 mt-4 w-64 xl:w-72 bg-amber-50/98 backdrop-blur-3xl rounded-3xl shadow-2xl shadow-amber-200/30 border border-amber-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
                   <div className="p-4 space-y-2">
-                    <a
+                    <Link 
                       href="/krest"
                       className="block px-4 xl:px-6 py-3 xl:py-4 text-blue-700 hover:text-blue-900 hover:bg-amber-100/80 rounded-2xl transition-all duration-300 font-medium text-base xl:text-lg"
                     >
                       Křest
-                    </a>
-                    <a
+                    </Link>
+                    <Link 
                       href="/birmovani"
                       className="block px-4 xl:px-6 py-3 xl:py-4 text-amber-700 hover:text-amber-900 hover:bg-amber-100/80 rounded-2xl transition-all duration-300 font-medium text-base xl:text-lg"
                     >
                       Biřmování
-                    </a>
-                    <a
+                    </Link>
+                    <Link 
                       href="/eucharistie"
                       className="block px-4 xl:px-6 py-3 xl:py-4 text-amber-700 hover:text-red-900 hover:bg-red-100/80 rounded-2xl transition-all duration-300 font-medium text-base xl:text-lg"
                     >
                       Eucharistie
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               
-              <a
+              <Link 
                 href="/cesta"
                 className="group relative px-4 xl:px-6 py-3 text-amber-700 hover:text-amber-900 font-medium text-base xl:text-lg transition-all duration-300"
               >
                 <span className="relative z-10">Cesta</span>
                 <div className="absolute inset-0 bg-amber-100 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-300 scale-95 group-hover:scale-100"></div>
-              </a>
+              </Link>
             </nav>
           </div>
           
@@ -165,15 +163,15 @@ export default function HomePage() {
             <div className="lg:hidden mt-4">
               <div className="bg-white/90 backdrop-blur-xl rounded-2xl p-4 border border-amber-200/50 shadow-xl">
                 <div className="space-y-2">
-                  <a href="/" className="block px-4 py-3 text-amber-800 font-bold bg-amber-100 rounded-xl">Úvod</a>
-                  <a href="/priprava" className="block px-4 py-3 text-amber-700 hover:bg-amber-100 rounded-xl transition-colors duration-300">Příprava</a>
+                  <Link  href="/" className="block px-4 py-3 text-amber-800 font-bold bg-amber-100 rounded-xl">Úvod</Link>
+                  <Link  href="/priprava" className="block px-4 py-3 text-amber-700 hover:bg-amber-100 rounded-xl transition-colors duration-300">Příprava</Link>
                   <div className="space-y-1">
                     <p className="px-4 py-2 text-amber-800 font-semibold text-sm">Svátosti</p>
-                    <a href="/krest" className="block px-6 py-2 text-blue-700 hover:bg-amber-100 rounded-xl transition-colors duration-300">Křest</a>
-                    <a href="/birmovani" className="block px-6 py-2 text-amber-700 hover:bg-amber-100 rounded-xl transition-colors duration-300">Biřmování</a>
-                    <a href="/eucharistie" className="block px-6 py-2 text-red-700 hover:bg-amber-100 rounded-xl transition-colors duration-300">Eucharistie</a>
+                    <Link  href="/krest" className="block px-6 py-2 text-blue-700 hover:bg-amber-100 rounded-xl transition-colors duration-300">Křest</Link>
+                    <Link  href="/birmovani" className="block px-6 py-2 text-amber-700 hover:bg-amber-100 rounded-xl transition-colors duration-300">Biřmování</Link>
+                    <Link  href="/eucharistie" className="block px-6 py-2 text-red-700 hover:bg-amber-100 rounded-xl transition-colors duration-300">Eucharistie</Link>
                   </div>
-                  <a href="/cesta" className="block px-4 py-3 text-amber-700 hover:bg-amber-100 rounded-xl transition-colors duration-300">Cesta</a>
+                  <Link  href="/cesta" className="block px-4 py-3 text-amber-700 hover:bg-amber-100 rounded-xl transition-colors duration-300">Cesta</Link>
                 </div>
               </div>
             </div>
@@ -595,7 +593,7 @@ export default function HomePage() {
                 </div>
                 
                 {/* Telefon */}
-                <a 
+                <Link  
                   href="tel:+420728126406" 
                   className="flex items-center justify-center p-3 lg:p-4 bg-amber-200/30 hover:bg-amber-200/50 rounded-lg transition-all duration-300 group cursor-pointer w-full"
                 >
@@ -603,10 +601,10 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   <span className="text-amber-900 group-hover:text-amber-700 transition-colors text-base lg:text-lg">+420 728 126 406</span>
-                </a>
+                </Link>
                 
                 {/* Email */}
-                <a 
+                <Link 
                   href="mailto:zikmundi@pm.me" 
                   className="flex items-center justify-center p-3 lg:p-4 bg-amber-200/30 hover:bg-amber-200/50 rounded-lg transition-all duration-300 group cursor-pointer w-full"
                 >
@@ -614,7 +612,7 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
                   </svg>
                   <span className="text-amber-900 group-hover:text-amber-700 transition-colors text-base lg:text-lg">bozisupport@pm.me</span>
-                </a>
+                </Link>
               </div>
 
               {/* Support Section */}
